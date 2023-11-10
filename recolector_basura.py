@@ -131,6 +131,6 @@ if __name__ == "__main__":
     model = server.model
     # Cleaned percentage of the total dirty cells
     clean_cells = (model.cleaned_cells / model.total_cells) * 100
-    agent_moves = model.count_steps
+    agent_moves = model.count_steps * model.count_agents
     print(f"Clean cells percentage: {clean_cells}%")
     print(f"Agent moves: {agent_moves}")
